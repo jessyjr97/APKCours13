@@ -39,9 +39,9 @@ public class TodoRecyclerAdapter extends RecyclerView.Adapter<TodoRecyclerAdapte
     @Override
     public void onBindViewHolder(@NonNull TodoRecyclerAdapter.MyViewHolder holder, int pos) {
         Todo todoToDisplay = todoList.get(pos);
-        holder.title.setText(todoToDisplay.title);
-        holder.description.setText(todoToDisplay.description);
-        holder.date.setText(todoToDisplay.dateAdded.toString());
+        holder.title.setText(todoToDisplay.getTitle());
+        holder.description.setText(todoToDisplay.getDescription());
+        holder.date.setText(todoToDisplay.getDateAdded().toString());
     }
 
     @Override
