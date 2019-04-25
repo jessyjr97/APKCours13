@@ -25,7 +25,7 @@ public class TodoRecyclerAdapter extends RecyclerView.Adapter<TodoRecyclerAdapte
             super(itemView);
             date = itemView.findViewById(R.id.textView_date);
             title = itemView.findViewById(R.id.textView_Title);
-            description = itemView.findViewById(R.id.editText_description);
+            description = itemView.findViewById(R.id.textView_description);
         }
     }
 
